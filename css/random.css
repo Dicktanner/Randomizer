@@ -1,8 +1,39 @@
+body{
+    padding: 2em;
+}
+input, button{
+    margin: 1em;
+}
 #names{
-   height: 10%;
-   width: 30%;
    background-color: #ddd;
 }
-h1{
+h1, h2{
+    margin: 0;
     text-align: center;
+}
+#left{
+    margin:1em;
+    border: 1px solid black;
+    width:50%;
+    float: left;
+}
+#right{
+    float: left;
+    margin:1em;
+    width:40%;
+    height: 50%;
+    border: 1px solid black;
+}
+#random{
+    float: left;
+}
+#randomButton{
+    display: none;
+}
+#result{
+    margin:1em;
+    width: 50%;
+    height: 2em;
+    border: 1px solid black;
+    background-color: #eee;
 }

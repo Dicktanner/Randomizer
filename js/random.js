@@ -6,6 +6,7 @@ $(function(){
     
     button.on("click", function(){
         console.log("clicked!")
+        random.show();
         var newItem= $("input").val();
         if (newItem.trim()!=="") {
         var newLi = $("<li>").text(newItem);
@@ -24,6 +25,7 @@ $(function(){
     
     $('#input1').keydown(function() {
         if (event.keyCode == 13) {
+        random.show();
         console.log("clicked!")
         var newItem= $("input").val();
         if (newItem.trim()!=="") {
