@@ -1,16 +1,38 @@
 $(function(){
-    var button= $("button");
-    var index=0
-    var nameArray=[];
+    var button= $("#addButton");
+    var random= $("#randomButton");
+    
+    
+    
     button.on("click", function(){
         console.log("clicked!")
         var newItem= $("input").val();
         if (newItem.trim()!=="") {
         var newLi = $("<li>").text(newItem);
         $("ul").append(newLi);
-        nameArray[index]=newItem;
-        index++;
-        console.log(nameArray);
+        $("input").val('');
         };
         });
+    
+    
+    random.on("click", function(){
+        var result = $("li");
+        randomItem= result[Math.floor((result.length)* Math.random())];
+        $("#result").text($(randomItem).text());
+        });
+    
+    
+    $('#input1').keydown(function() {
+        if (event.keyCode == 13) {
+        console.log("clicked!")
+        var newItem= $("input").val();
+        if (newItem.trim()!=="") {
+        var newLi = $("<li>").text(newItem);
+        $("ul").append(newLi);
+        $("input").val('');
+        };
+        }
+       // $("input1").focus();
+    });
+    
 });

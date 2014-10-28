@@ -14,6 +14,7 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/random.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
@@ -23,12 +24,16 @@
 
         <!-- Add your site or application content here -->
         <h1>Randomizer</h1>
-        <form action="demo_form.asp">
-            Input Name: <input type="text" name="name"><br>
-            <button type="button">Add name to list</button>
+        <!--<form action="demo_form.asp">-->
+            Input Name: <input id="input1" type="text" name="name"><br>
+            <button type="button" id="addButton">Add name to list</button>
+            <div>
             <h2>Names</h2>
-            <ul></ul>
-        </form>
+            <div id="names"><ul></ul></div>
+            <button type="button" id="randomButton">Randomize</button>
+            <div id="result"></div>
+            </div>
+       <!-- </form>-->
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
